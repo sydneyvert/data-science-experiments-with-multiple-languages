@@ -1,0 +1,32 @@
+* Open project
+  
+** TODO find the datasets
+*** choice 1: passwd
+-- expect passwd we can also explore the username, the webpage, etc.
+-- if we are able to get facebook data (eg. networks) or some data
+   like online shopping things would be more fun and the data set is
+   not that big
+-- Hard things:
+1. might learning LDA and generating function
+2. how to deal with the string
+3. how to transfer our model to recommender systems (like what kinds
+   of password we recommend to use) 也就是说当用户输入了密码之后我们能
+   检验出他这个密码是否容易被识别，怎么判断这个呢？可以从大量的数据中
+   识别一些常用的密码，黑客攻击时候经常采用撞库。because of this, we
+   think about how to avoid this situation from what we learned. like
+   generate the passwd??
+
+4. how to 
+
+*** choice 2: Detecting Malicious URL
+-- mainly for classification: 1 means a malicious URL and 0 indicates
+a benign URL.
+-- benefits: we have enough data to deal with
+
+
+*** TODO make an agreement of model choosing
+-- Our choices: LDA, Bag of words, Recommender systems
+
+** TODO learn how to modeling
+
+** TODO Writing analysing stuff
