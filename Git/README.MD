@@ -2,7 +2,7 @@
 ## From: https://youtu.be/I8gZlctY5no
 After installing git, we are able to upload it by terminal command.
 ### Git clone
-Firstly, create a respositories and clone it by using `git clone https://yourgitaddress`
+Firstly, create a respositories and clone it by using `git clone yourgitaddress` which can be found at the homepage of every respositories
 ### Coding
 After that, you are able to change the local files and enjoying your coding.
 ### Update the files
