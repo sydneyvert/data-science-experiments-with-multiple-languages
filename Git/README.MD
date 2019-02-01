@@ -10,4 +10,5 @@ In order to update files, we should do as follows:<br>
 1. `git add --all`<br>
 2. `git commit -m "information"`<br>
 (skip: look at your status by using `git status`)<br>
-3. `git push` to push the files (need to login in at the first time).
+3. `git push` to push the files (need to login in at the first time).<br>
+4. if you fail to upload the codes, try to update your version of the code first by using `git pull --rebase`
