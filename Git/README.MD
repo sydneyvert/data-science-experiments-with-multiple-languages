@@ -12,3 +12,15 @@ In order to update files, we should do as follows:<br>
 (skip: look at your status by using `git status`)<br>
 3. `git push` to push the files (need to login in at the first time).<br>
 4. if you fail to upload the codes, try to update your version of the code first by using `git pull --rebase`
+## Multiuser
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
