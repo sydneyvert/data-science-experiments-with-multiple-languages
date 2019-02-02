@@ -2,7 +2,7 @@ LOGFILE=./upload.log
 git add --all
 git commit -m "autosave"
 {
-   git push
+   git push&&
    echo "$(date) : file uploaded" >> $LOGFILE
 }||{
    git pull --rebase
