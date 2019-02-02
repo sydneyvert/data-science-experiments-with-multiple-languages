@@ -7,5 +7,5 @@ git commit -m "autosave"
 }||{
    git pull --rebase
    git push
-   echo "`date +%H:%M:%S : file reloaded and uploaded" >> $LOGFILE
+   echo "`date +%H:%M:%S` : file reloaded and uploaded" >> $LOGFILE
 }
