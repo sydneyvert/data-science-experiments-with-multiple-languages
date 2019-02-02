@@ -3,7 +3,7 @@ git add --all
 git commit -m "autosave"
 {
    git push
-   echo "`date +%H:%M:%S : file uploaded" >> $LOGFILE
+   echo "`date` : file uploaded" >> $LOGFILE
 }||{
    git pull --rebase
    git push
