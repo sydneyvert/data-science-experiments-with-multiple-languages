@@ -1,4 +1,4 @@
-LOGFILE="/User/xihajun/Documents/Data Science/data-science-toolbox-kate-syd-jun/Git/upload.log"
+LOGFILE="/Users/xihajun/Documents/Data Science/data-science-toolbox-kate-syd-jun/Git/upload.log"
 git add --all
 git commit -m "autosave"
 {
