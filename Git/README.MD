@@ -23,4 +23,10 @@ You can suppress this message by setting them explicitly:
 After doing this, you may fix the identity used for this commit with:
 
     git commit --amend --reset-author
-
+    
+# Notes
+## Permission denied
+    sudo chmod 755 'filename'
+## Automatically upload every two hours
+    crontab -e
+    0 0-23/2 * * * bash "/Users/username/Documents/Data Science/data-science-toolbox-kate-syd-jun/Git/autosave.sh"
