@@ -1,4 +1,5 @@
 LOGFILE=./upload.log
+git checkout master
 git add --all
 git commit -m "autosave"
 #try catch function 
