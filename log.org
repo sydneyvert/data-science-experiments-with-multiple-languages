@@ -30,3 +30,22 @@ a benign URL.
 ** TODO learn how to modeling
 
 ** TODO Writing analysing stuff
+*** Why do we choose this dataset
+
+*** TODO Our goal?
+*** TODO How to deal with data
+1. Pre-process: load data, counting, get histogram or matrix
+2. Hard thing is how to find things like: 123456, 76543, qwertyui, names, birthdays
+3. A rough idea is using ASII code to represent the strings
+4. Once getting every rows information it should be related to bag of words or LDA
+5. if we use LDA we shouldn't consider the numbers or characters' order :(
+6. but it is easy to divide the string and number may be we can consider the 
+   divided strings as the wholeset
+7. topics firstly could be defined as number and strings or capital string and small string
+8. then strings and numbers could contain more details like name, birthday, and so on
+9. if we want to consider the order we have to look at n-gram model(calculate the prob
+   like p(2 is behind 1|1 observed)>p(3 is behind 1|1 observed)
+*** TODO How to model it appropriately
+1. if every characters prob is the same or we can set a prior for them
+
+*** TODO in the end, Recommender Systems might be used to score a password
