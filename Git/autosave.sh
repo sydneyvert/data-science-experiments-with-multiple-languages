@@ -2,6 +2,7 @@ LOGFILE=./upload.log
 git checkout master
 git add .
 git commit -m "autosave"
+git status
 #try catch function 
 #write in this way {code1&&}||{code2}
 read -p "请选择相应的发行版本系统（输入数字序号）：" number
