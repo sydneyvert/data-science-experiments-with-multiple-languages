@@ -27,12 +27,14 @@ import re
 s2 ='letter123num45***'
 
 s2_split = re.split('(\d+)',s2)
+    
+data['original'] = data['original'].astype(str)
 
-data["numletsplit"] = ""
+data["specialcharsplit"] = ""
 
 for index, row in data.iterrows():
-    row['numletsplit'] = re.split('(\d+)', row['original'])
-    
+    row['specialcharsplit'] = re.findall(r"[A-Za-z@#]+|\S", row['original'])
+
 import wordsegment as ws
 
 from wordsegment import load, segment
@@ -53,5 +55,5 @@ data["extrawordsplit"] = ""
 
 for index, row in data.iterrows():
     row['extrawordsplit'] = list()
-    for ind, val in enumerate(row['numletsplit']):
-        row['extrawordsplit'].append(segment((row['numletsplit'])[ind]))
+    for ind, val in enumerate(row['specialcharsplit']):
+        row['extrawordsplit'].append(segment((row['specialcharsplit'])[ind]))
