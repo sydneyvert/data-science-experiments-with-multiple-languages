@@ -9,7 +9,7 @@ Created on Sun Feb  3 09:58:01 2019
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('data/38650-password-sktorrent.txt', header=None)
+data = pd.read_csv('~/Documents/DS\ Projects/Project\ 3/data-science-toolbox-kate-syd-jun/data/38650-password-sktorrent.txt', header=None)
 
 s = "string"
 
