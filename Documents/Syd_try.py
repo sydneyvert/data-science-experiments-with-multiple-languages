@@ -9,51 +9,64 @@ Created on Sun Feb  3 09:58:01 2019
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('~/Documents/DS\ Projects/Project\ 3/data-science-toolbox-kate-syd-jun/data/38650-password-sktorrent.txt', header=None)
-
-s = "string"
-
-s_list = list(s)
-
-data["split"] = ""
-
-data.columns = ['original', 'split']
-
-for index, row in data.iterrows():
-    row['split'] = list(row['original'])
+data = pd.read_csv('~/Documents/DS-Projects/Project-3/data-science-toolbox-kate-syd-jun/data/38650-password-sktorrent.txt', header=None)
 
 import re
 
-s2 ='letter123num45***'
-
-s2_split = re.split('(\d+)',s2)
+data.columns = ['original']
     
 data['original'] = data['original'].astype(str)
 
 data["specialcharsplit"] = ""
-
-for index, row in data.iterrows():
-    row['specialcharsplit'] = re.findall(r"[A-Za-z@#]+|\S", row['original'])
+data["extrawordsplit"] = ""
 
 import wordsegment as ws
 
 from wordsegment import load, segment
 
-seg = 'testmysplitsegmentpleaseandthankyou'
-
 load()
-segtry = segment(seg)
+  
+def flat(l):
+    for k in l:
+        if not isinstance(k, (list, tuple)):
+            yield k
+        else:
+            yield from flat(k)
+  
+for index, row in data.iterrows():
+  row['specialcharsplit'] = re.findall(r'[0-9]+|[a-zA-Z]+|[^a-zA-Z0-9]+',row['original'])
+  passwdstring=[]
+  for i in row['specialcharsplit']:
+     templist = segment(i)
+     if(templist):
+       passwdstring.append(templist)
+     else:
+       passwdstring.append(i)
+  row['extrawordsplit'] = list(flat(passwdstring))
+  
+  
+funlist = ['i', 'am', 'a', 'list']
 
-#works for individual words in lists:
-segtry = segment((data.iloc[1]['numletsplit'])[0])
+funstring = ""
 
-new_list = list()
-for i, val in enumerate(data.iloc[53]['numletsplit']):
-    new_list.append(segment((data.iloc[53]['numletsplit'])[i]))
-
-data["extrawordsplit"] = ""
+for indexx, vall in enumerate(funlist):
+    funstring = funstring + funlist[indexx]
+    
+data["iscapital"] = ""
 
 for index, row in data.iterrows():
-    row['extrawordsplit'] = list()
-    for ind, val in enumerate(row['specialcharsplit']):
-        row['extrawordsplit'].append(segment((row['specialcharsplit'])[ind]))
+    array = []
+    for c in row['original']:
+      array.append(c.isupper() + 0)
+    row["iscapital"] = array
+
+length = 0
+for indexx, vall in enumerate(data.iloc[0]['extrawordsplit']):
+    for i in range(0, len(vall)-1):
+        if (data.iloc[0]['iscapital'])[length + i] == 1:
+            ((data.iloc[0]['extrawordsplit'])[indexx][i]).upper()
+    length = length + len(vall)
+
+import nltk
+from nltk.corpus import stopwords
+set(stopwords.words('english'))
