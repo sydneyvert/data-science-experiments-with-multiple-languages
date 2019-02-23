@@ -1,3 +1,7 @@
+# Online jupyter version
+
+\url{http://ls.xihajun.cn/Project.html}[Online Notebook] shows our results and don't need to run it for years.
+
 # Set up
 
 If you have Jupyter in your requirements.txt and you activate that environment (I recommend Virtualenv), install, and run Jupyter, you'll have all the specific versions you want. So:
