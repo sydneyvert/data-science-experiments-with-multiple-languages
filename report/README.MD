@@ -2,9 +2,9 @@
 
 All the requirements are in requirements.txt file, you can either use `pip install -r requirements.txt` to get the package installed or do some set up things as follows:
  
-## Set up
+## Set up 
 
-If you have Jupyter in your requirements.txt and you activate that environment (I recommend Virtualenv), install, and run Jupyter, you'll have all the specific versions you want. So:
+If we have Jupyter in your requirements.txt and we activate that environment (Virtualenv), install, and run Jupyter, we'll have all the specific versions we want. So:
 
      python3 -m venv venv
      source venv/bin/activate #(different command on Windows)
