@@ -1,18 +1,15 @@
 # data-science-toolbox-kate-syd-jun
 Learning topics modelling model <br>
-Topics: brithday, phone numbers, keyboard passwd like 12345,qwerty and so on
 ## Report
-
 Our report can be find in [./report/Project.ipynb](https://github.com/xihajun/data-science-toolbox-kate-syd-jun/blob/master/report/Project.ipynb)
-## TODO:
-1. Can we set a stop word making 123456 to 123? if it neccessary?<br>
-2. How LDA works? We used bag of words, right?<br>
-3. If it is worth to use LDA when the documents are so tiny with length 2-4? Can we improve it?<br> 
-4. If we want to get more informations, we need to see how to make use of the username dataset<br> 
-5. LDA algorithm <br> If we fail to get good topics, we should try to explain the reason and show our understanding of the algorithm.<br> Multi-Dichilet how it works?
-6. Markov chain**, get the transition matrix<br> 
-7. Hidden markov chain**, 1 -- ! 2 --" and so on<br> 
+## Set up
 
+If you have Jupyter in your requirements.txt and you activate that environment (I recommend Virtualenv), install, and run Jupyter, you'll have all the specific versions you want. So:
+
+     python3 -m venv venv
+     source venv/bin/activate #(different command on Windows)
+     pip install -r requirements.txt
+     jupyter notebook
 ## Requirement
      pip install -r requirements.txt
 ## Reading list:
