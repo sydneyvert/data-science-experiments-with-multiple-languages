@@ -1,6 +1,6 @@
 # Online jupyter version
 
-\url{http://ls.xihajun.cn/Project.html}[Online Notebook] shows our results and don't need to run it for years.
+[Online Notebook]{http://ls.xihajun.cn/Project.html} shows our results and don't need to run it for years.
 
 # Set up
 
