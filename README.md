@@ -1,7 +1,7 @@
 # data-science-toolbox-kate-syd-jun
 Learning topics modelling model <br>
 ## Report
-Our report can be find in [./report/Project.ipynb](https://github.com/xihajun/data-science-toolbox-kate-syd-jun/blob/master/report/Project.ipynb)
+Our final code can be find in [./report/Project.ipynb](https://github.com/xihajun/data-science-toolbox-kate-syd-jun/blob/master/report/Project.ipynb)
 ## Set up
 
 If you have Jupyter in your requirements.txt and you activate that environment (I recommend Virtualenv), install, and run Jupyter, you'll have all the specific versions you want. So:
