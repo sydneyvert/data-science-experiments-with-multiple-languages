@@ -1,7 +1,13 @@
 # data-science-toolbox-kate-syd-jun
 Learning topics modelling model <br>
+
 ## Report
 Our final code can be find in [./report/Project.ipynb](https://github.com/xihajun/data-science-toolbox-kate-syd-jun/blob/master/report/Project.ipynb)
+
+# Install requirements
+
+All the requirements are in requirements.txt file, you can either use `pip install -r requirements.txt` to get the package installed or do some set up things as follows:
+
 ## Set up
 
 If you have Jupyter in your requirements.txt and you activate that environment (I recommend Virtualenv), install, and run Jupyter, you'll have all the specific versions you want. So:
